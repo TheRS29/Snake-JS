@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(0, 217, 255);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.boardinfo{
+    margin-left: 500px;
+}
+
+#board, .boardinfo {
+    max-width: 500px;
+
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-left: 500px;
+}
+
+#startButton, .boardinfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boardinfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#startButton {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+#scoreBoard  {
+    display: inline-block;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare{
+ background-color: #2fd720;
+}
+
+.snakeSquare {
+    background-color: rgb(208, 255, 0);
+    background-size: 50px;
+    box-sizing: border-box;
+    border: 3px solid black;
+}
+
+.foodSquare{
+background-image: url(Imagenes/manzana-snake.png);
+background-size: 50px; 
+}
+
